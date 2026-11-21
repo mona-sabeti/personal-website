@@ -45,8 +45,7 @@ roles.
 5. Featured projects
 6. Skills
 7. Education
-8. Contact
-9. Footer
+8. Footer
 
 ## Visual Direction
 

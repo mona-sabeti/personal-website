@@ -82,7 +82,7 @@ html {
   }
 
   .project-card {
-    @apply flex min-h-[420px] flex-col rounded-[1.75rem] border border-mist/15 bg-graphite/35 p-7 outline-none transition duration-300 hover:-translate-y-1 hover:bg-graphite/55 sm:p-8;
+    @apply flex min-h-[440px] flex-col rounded-[1.75rem] border border-mist/15 bg-graphite/35 p-7 outline-none transition duration-300 hover:-translate-y-1 hover:bg-graphite/55 sm:p-8;
   }
 
   .skip-link {
@@ -93,6 +93,7 @@ html {
 .hero-grid {
   position: absolute;
   inset: 0;
+  pointer-events: none;
   background-image:
     radial-gradient(circle at 78% 22%, rgb(169 184 204 / 0.55), transparent 24rem),
     linear-gradient(to right, rgb(52 59 70 / 0.05) 1px, transparent 1px),

@@ -1,10 +1,9 @@
-import { About } from "@/components/About";
-import { Contact } from "@/components/Contact";
 import { Education } from "@/components/Education";
 import { Experience } from "@/components/Experience";
 import { FeaturedProjects } from "@/components/FeaturedProjects";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
+import { Leadership } from "@/components/Leadership";
 import { Navbar } from "@/components/Navbar";
 import { RefreshScrollReset } from "@/components/RefreshScrollReset";
 import { Skills } from "@/components/Skills";
@@ -19,12 +18,11 @@ export default function Home() {
       <Navbar />
       <main id="main-content">
         <Hero />
-        <About />
+        <Education />
         <Experience />
         <FeaturedProjects />
+        <Leadership />
         <Skills />
-        <Education />
-        <Contact />
       </main>
       <Footer />
     </>

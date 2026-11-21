@@ -23,9 +23,6 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
-          <Link className="button button-small button-primary" href="#contact">
-            Let&apos;s talk
-          </Link>
         </div>
 
         <details className="nav-menu relative md:hidden">
@@ -46,12 +43,6 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              className="mt-1 block rounded-xl bg-ink px-4 py-3 text-sm font-bold text-mist"
-              href="#contact"
-            >
-              Let&apos;s talk
-            </Link>
           </div>
         </details>
       </nav>

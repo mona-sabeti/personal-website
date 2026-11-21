@@ -10,7 +10,7 @@ export function Education() {
     >
       <div className="page-shell">
         <SectionHeading
-          eyebrow="05 / Education"
+          eyebrow="01 / Education"
           id="education-heading"
           title="Education"
         />
@@ -27,9 +27,17 @@ export function Education() {
                 <h3 className="mt-2 text-2xl font-bold tracking-tight text-ink sm:text-3xl">
                   {item.credential}
                 </h3>
-                <p className="mt-5 max-w-2xl leading-7 text-graphite">
-                  {item.detail}
-                </p>
+                <ul className="mt-5 max-w-3xl space-y-2 leading-7 text-graphite">
+                  {item.details.map((detail) => (
+                    <li className="flex gap-3" key={detail}>
+                      <span
+                        aria-hidden="true"
+                        className="mt-3 size-1.5 shrink-0 rounded-full bg-accent"
+                      />
+                      <span>{detail}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
               <p className="text-xs font-bold uppercase tracking-wider text-graphite sm:text-right">
                 {item.period}

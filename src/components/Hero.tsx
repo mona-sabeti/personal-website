@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { profile } from "@/data/portfolio";
 import { ArrowUpRightIcon } from "./icons";
 
@@ -20,16 +19,15 @@ export function Hero() {
             >
               {profile.name}
             </h1>
+            <p className="mt-7 text-base font-semibold text-graphite sm:text-lg">
+              {profile.location} · Western University
+            </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link className="button button-primary" href="#projects">
+              <a className="button button-primary" href="#projects">
                 Projects
                 <ArrowUpRightIcon />
-              </Link>
-              <Link className="button button-secondary" href="#contact">
-                Contact
-                <ArrowUpRightIcon />
-              </Link>
+              </a>
             </div>
           </div>
 

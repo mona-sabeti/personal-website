@@ -8,31 +8,30 @@ export function Skills() {
       className="section-space bg-powder/45"
       id="skills"
     >
-      <div className="page-shell grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+      <div className="page-shell">
         <SectionHeading
-          eyebrow="04 / Skills"
+          eyebrow="05 / Technical skills"
           id="skills-heading"
-          title="Skills"
+          title="Technical skills"
         />
-        <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2">
+        <div className="mt-12 border-t border-graphite/25 sm:mt-16">
           {skillGroups.map((group, index) => (
-            <div key={group.title}>
-              <div className="flex items-center gap-3 border-b border-graphite/20 pb-4">
+            <div
+              className="grid gap-5 border-b border-graphite/25 py-8 sm:py-10 lg:grid-cols-[0.65fr_1.35fr] lg:gap-12"
+              key={group.title}
+            >
+              <div className="flex items-start gap-3">
                 <span className="text-xs font-extrabold text-graphite">
                   0{index + 1}
                 </span>
-                <h3 className="font-bold text-ink">{group.title}</h3>
+                <h3 className="text-lg font-bold text-ink">{group.title}</h3>
               </div>
-              <ul className="mt-5 space-y-3">
+              <ul className="flex flex-wrap gap-x-8 gap-y-4">
                 {group.skills.map((skill, skillIndex) => (
                   <li
-                    className="flex items-center gap-3 text-sm font-medium text-graphite"
+                    className="text-base font-medium text-graphite"
                     key={`${group.title}-${skill}-${skillIndex}`}
                   >
-                    <span
-                      aria-hidden="true"
-                      className="size-1.5 rounded-full bg-ink/60"
-                    />
                     {skill}
                   </li>
                 ))}

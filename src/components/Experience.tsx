@@ -10,9 +10,9 @@ export function Experience() {
     >
       <div className="page-shell">
         <SectionHeading
-          eyebrow="02 / Experience"
+          eyebrow="02 / Professional experience"
           id="experience-heading"
-          title="Experience"
+          title="Professional experience"
         />
 
         <div className="mt-14 grid gap-4">
@@ -31,14 +31,14 @@ export function Experience() {
                 <p className="mt-1 text-sm font-semibold text-graphite">{item.company}</p>
               </div>
               <div>
-                <p className="leading-7 text-graphite">{item.summary}</p>
-                <ul
-                  aria-label={`Skills used at ${item.company}`}
-                  className="mt-5 flex flex-wrap gap-2"
-                >
-                  {item.skills.map((skill, skillIndex) => (
-                    <li className="tag" key={`${skill}-${skillIndex}`}>
-                      {skill}
+                <ul className="space-y-3 leading-7 text-graphite">
+                  {item.highlights.map((highlight) => (
+                    <li className="flex gap-3" key={highlight}>
+                      <span
+                        aria-hidden="true"
+                        className="mt-3 size-1.5 shrink-0 rounded-full bg-accent"
+                      />
+                      <span>{highlight}</span>
                     </li>
                   ))}
                 </ul>

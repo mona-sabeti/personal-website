@@ -18,14 +18,6 @@ export function Footer() {
             >
               LinkedIn <ArrowUpRightIcon className="size-3" />
             </a>
-            <a
-              className="inline-flex items-center gap-1.5 transition hover:text-mist"
-              href={profile.github}
-              rel="noreferrer"
-              target="_blank"
-            >
-              GitHub <ArrowUpRightIcon className="size-3" />
-            </a>
           </div>
         </div>
       </div>

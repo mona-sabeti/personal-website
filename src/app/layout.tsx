@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Mona Sabeti | Software Engineer",
   description:
-    "Portfolio of Mona Sabeti, a software engineering graduate with experience in cybersecurity, automation, data analytics and full-stack development.",
+    "Portfolio of Mona Sabeti, a software engineering graduate student with experience in cybersecurity, automation, data analytics, AI and full-stack development.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

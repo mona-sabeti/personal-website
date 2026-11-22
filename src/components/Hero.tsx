@@ -1,5 +1,5 @@
 import { profile } from "@/data/portfolio";
-import { ArrowUpRightIcon } from "./icons";
+import { GitHubIcon, LinkedInIcon } from "./icons";
 
 export function Hero() {
   return (
@@ -25,7 +25,24 @@ export function Hero() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a className="button button-primary" href="#projects">
               Projects
-              <ArrowUpRightIcon />
+            </a>
+            <a
+              className="button button-secondary"
+              href={profile.github}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <GitHubIcon />
+              GitHub
+            </a>
+            <a
+              className="button button-secondary"
+              href={profile.linkedIn}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <LinkedInIcon />
+              LinkedIn
             </a>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { profile } from "@/data/portfolio";
-import { ArrowUpRightIcon } from "./icons";
+import { GitHubIcon, LinkedInIcon } from "./icons";
 
 export function Footer() {
   return (
@@ -12,11 +12,19 @@ export function Footer() {
           <div className="flex gap-5">
             <a
               className="inline-flex items-center gap-1.5 transition hover:text-mist"
+              href={profile.github}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <GitHubIcon className="size-3.5" /> GitHub
+            </a>
+            <a
+              className="inline-flex items-center gap-1.5 transition hover:text-mist"
               href={profile.linkedIn}
               rel="noreferrer"
               target="_blank"
             >
-              LinkedIn <ArrowUpRightIcon className="size-3" />
+              <LinkedInIcon className="size-3.5" /> LinkedIn
             </a>
           </div>
         </div>

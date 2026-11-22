@@ -34,7 +34,8 @@ export const profile = {
   shortName: "MS",
   role: "Software Engineering • Cybersecurity • AI",
   location: "London, ON",
-  linkedIn: "https://www.linkedin.com/in/monasabeti95",
+  linkedIn: "https://www.linkedin.com/in/monasabeti95/",
+  github: "https://github.com/msabetih",
 } as const;
 
 export const navigation: NavItem[] = [

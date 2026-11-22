@@ -102,36 +102,6 @@ html {
   mask-image: linear-gradient(to bottom, black, transparent 94%);
 }
 
-.portrait-mark {
-  position: relative;
-  display: grid;
-  aspect-ratio: 1;
-  width: min(100%, 24rem);
-  place-items: center;
-  border-radius: 9999px;
-  background: var(--powder);
-  box-shadow:
-    inset 0 0 0 1px rgb(62 65 71 / 0.08),
-    0 24px 70px rgb(62 65 71 / 0.12);
-}
-
-.portrait-mark::before,
-.portrait-mark::after {
-  content: "";
-  position: absolute;
-  border: 1px solid rgb(62 65 71 / 0.18);
-  border-radius: 9999px;
-}
-
-.portrait-mark::before {
-  inset: 1.1rem;
-}
-
-.portrait-mark::after {
-  inset: -1.15rem;
-  border-style: dashed;
-}
-
 .menu-lines {
   display: grid;
   gap: 4px;

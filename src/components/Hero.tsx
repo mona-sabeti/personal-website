@@ -10,33 +10,23 @@ export function Hero() {
     >
       <div aria-hidden="true" className="hero-grid" />
       <div className="page-shell relative">
-        <div className="grid items-center gap-16 lg:grid-cols-[1.25fr_0.75fr] lg:gap-8">
-          <div>
-            <p className="eyebrow">{profile.role}</p>
-            <h1
-              className="mt-5 max-w-4xl text-[clamp(4rem,9vw,7.5rem)] font-semibold leading-[0.94] tracking-[-0.065em] text-ink"
-              id="hero-heading"
-            >
-              {profile.name}
-            </h1>
-            <p className="mt-7 text-base font-semibold text-graphite sm:text-lg">
-              {profile.location} · Western University
-            </p>
+        <div>
+          <p className="eyebrow">{profile.role}</p>
+          <h1
+            className="mt-5 max-w-4xl text-[clamp(4rem,9vw,7.5rem)] font-semibold leading-[0.94] tracking-[-0.065em] text-ink"
+            id="hero-heading"
+          >
+            {profile.name}
+          </h1>
+          <p className="mt-7 text-base font-semibold text-graphite sm:text-lg">
+            {profile.location} · Western University
+          </p>
 
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <a className="button button-primary" href="#projects">
-                Projects
-                <ArrowUpRightIcon />
-              </a>
-            </div>
-          </div>
-
-          <div className="hidden justify-center lg:flex">
-            <div aria-hidden="true" className="portrait-mark">
-              <span className="text-[5.5rem] font-extrabold tracking-[-0.08em] text-accent">
-                {profile.shortName}
-              </span>
-            </div>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a className="button button-primary" href="#projects">
+              Projects
+              <ArrowUpRightIcon />
+            </a>
           </div>
         </div>
       </div>

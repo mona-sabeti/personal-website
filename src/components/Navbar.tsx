@@ -13,7 +13,7 @@ export function Navbar() {
           href="/"
         >
           {profile.shortName}
-          <span className="text-graphite">.</span>
+          <span className="text-graphite"></span>
           <span className="sr-only">{profile.name}, home</span>
         </Link>
 
